@@ -1,0 +1,36 @@
+footer{
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+footer ul a{
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+footer ul a:hover{
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+footer p{
+  color: rgb(113 113 122);
+  text-align: center;
+}
+footer p span{
+  color: var(--title);
+}
+footer p span:hover{
+  color: var(--blue);
+  cursor: pointer;
+}
+@media (max-width:860px) {
+  footer{
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul{
+    margin-bottom: 1rem;
+  }
+}

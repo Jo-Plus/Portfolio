@@ -1,0 +1,188 @@
+section.hero {
+  padding-top: 8rem;
+}
+
+section .left-section h2 {
+  font-size: 2.5rem;
+  line-height: 3.3rem;
+  margin: 20px 0;
+  color: var(--title);
+}
+
+section .left-section p {
+  color: var(--subtitle);
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+section .parent {
+  display: inline-block;
+}
+
+.hero .cv {
+  padding: 10px 3px;
+  display: inline-block;
+  background-color: var(--blue);
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.hero .cv:hover {
+  background-color: var(--iconhover);
+}
+
+section .parent .avatar {
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid orange;
+  padding: 5px;
+  box-shadow: 1px 1px 20px gray;
+}
+
+.parent span {
+  bottom: 20px;
+  right: 15px;
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+.hero .icons-hero {
+  gap: 1.3rem;
+  justify-content: left;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: var(--subtitle);
+}
+
+.icon:hover {
+  transition: 0.3s;
+  font-size: 1.2rem;
+  color: var(--iconhover);
+}
+
+.light .hero h2 {
+  color: var(--title);
+}
+
+.textAnimation {
+  font-size: 35px;
+  min-width: 280px;
+  overflow: hidden;
+}
+
+@media (max-width:820px) {
+  .textAnimation {
+    font-size: 1.5rem !important;
+  }
+
+  .textAnimation span {
+    padding: 7px;
+  }
+
+  .textAnimation span:after {
+    margin-top: 5px;
+  }
+}
+
+.textAnimation span {
+  position: relative;
+  padding: 5px;
+}
+
+.textAnimation span::before {
+  content: "Web Developer";
+  color: var(--title);
+  animation: words 20s infinite;
+}
+
+.textAnimation span:after {
+  content: "";
+  background: var(--secondary);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--title);
+  right: -8px;
+  animation: cursor 0.75s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid var(--title);
+  }
+}
+
+@keyframes words {
+
+  0%,
+  20% {
+    content: "Welcome 👋";
+  }
+
+  21%,
+  40% {
+    content: "I'm Youssef Saeed";
+  }
+
+  41%,
+  60% {
+    content: "<Frontend React/>";
+  }
+
+  61%,
+  80% {
+    content: "Web Developer";
+  }
+
+  81%,
+  100% {
+    content: "From Cairo";
+  }
+}
+
+@keyframes typing {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px)
+  }
+}
+
+@media (max-width:820px) {
+  section .left-section {
+    text-align: center;
+  }
+
+  section .left-section .icons-hero {
+    display: block;
+  }
+
+  section .left-section .icons-hero a {
+    margin: 0 10px;
+  }
+}

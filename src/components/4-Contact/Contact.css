@@ -1,0 +1,162 @@
+.icon-contact {
+  color: var(--subtitle);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.title {
+  font-size: 2.1rem;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--subtitle);
+  margin-bottom: 2rem;
+  line-height: 1.6rem;
+}
+
+label {
+  color: var(--subtitle);
+}
+
+#email,
+textarea {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63 63 70);
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+#email:hover,
+textarea:hover {
+  border: 1px solid rgb(45 212 191);
+}
+
+#email:hover,
+textarea:hover {
+  border: 1px solid rgb(45 212 191);
+}
+
+.light #email,
+.light textarea {
+  background-color: #fff;
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  color: #232324;
+}
+
+.p1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem !important;
+}
+
+.p2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.light #email:hover,
+.light textarea:hover,
+.light #email:hover,
+.light textarea:hover {
+  border: 1px solid rgb(78 80 80);
+}
+
+textarea {
+  min-height: 9rem;
+}
+
+.submit {
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 1.05rem;
+  opacity: 0.5;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 1.8rem;
+  border: 1px solid rgb(63 63 70);
+}
+
+.submit:hover {
+  scale: 0.9;
+}
+
+.contact {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.light .success {
+  color: var(--title);
+}
+
+@media(max-width:1055px) {
+  .contact-me {
+    display: none;
+  }
+
+  .hero{
+    text-align: center;
+  }
+
+  .icons-hero{
+    display: block;
+    margin: 0 10px;
+  }
+
+  .icons-hero a{
+    margin: 0 10px;
+  }
+
+  @media(max-width:900px) {
+    .contact-me-2 {
+      display: none;
+    }
+  }
+
+  @media(max-width:900px) {
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    form .flex {
+      flex-wrap: wrap;
+      justify-content: start;
+
+    }
+
+    form .animation {
+      display: none;
+    }
+
+    form button {
+      width: 30%;
+    }
+
+    #email,
+    textarea {
+      width: 100%;
+      margin-left: 0;
+      padding: 0.5rem 0;
+      margin-top: 1rem;
+    }
+
+    .contact {
+      place-items: center;
+    }
+
+    .submit {
+      margin: 20px auto 0 auto;
+    }
+  }
+}
