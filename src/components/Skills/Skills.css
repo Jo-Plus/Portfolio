@@ -1,0 +1,88 @@
+.headSection{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.skil{
+  margin-bottom: 2.2rem !important;
+}
+.skils{
+  margin-bottom: 0.5rem !important;
+}
+.light .headSection{
+  color: var(--title);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.headSection span{
+  color: var(--blue);
+}
+.skills .flex{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+.skill:not(:last-child){
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: var(--bgHeader);
+  box-shadow: 1px 1px 40px rgb(49, 48, 48);
+}
+.skill:not(:last-child):hover{
+  scale: 1.1;
+  cursor: pointer;
+  border: 1px solid var(--blue);
+}
+.skill span{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: rgb(21,114,182);
+}
+.skill p{
+  font-size: 1.5rem;
+  color: rgb(21,114,182);
+}
+a .flex{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+a .flex p{
+font-size: 2rem;
+margin-bottom: 5px;
+}
+
+.p44{
+  color: white !important;
+}
+.light .p44{
+  color: var(--title) !important;
+}
+
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-hidden {
+    display: flex !important;
+  }
+}
+
+.more-button {
+  display: flex !important;
+}
+
+/* ========================================================== */
+.more{
+  width: 150px;
+}

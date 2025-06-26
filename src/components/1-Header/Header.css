@@ -1,0 +1,182 @@
+.logo {
+  width: 70px;
+}
+
+
+header {
+  padding: 0 8rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: var(--bgHeader);
+  color: var(--title);
+}
+
+
+html.light header {
+  background-color: var(--bgHeader);
+  color: var(--title);
+}
+
+html.dark header {
+  background-color: var(--bgHeader);
+  color: var(--title);
+}
+
+
+@media (max-width: 760px) {
+  header {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 0 1rem;
+  }
+}
+
+
+header nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px rgb(49, 48, 48);
+}
+
+
+header ul {
+  gap: 16px;
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+
+
+.fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(40, 40, 48, 0.8);
+  z-index: 11;
+  backdrop-filter: blur(8px);
+}
+
+.fixed .modal {
+  width: 85%;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  animation: move 0.5s 1;
+}
+
+@keyframes move {
+  0% {
+    scale: 0
+  }
+
+  60% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.fixed .modal li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+
+.fixed .modal li:first-child {
+  border-bottom: none;
+  text-align: right;
+  padding-bottom: 0.77rem;
+  padding-top: 0.2rem;
+}
+
+.fixed .modal li:last-child {
+  border-bottom: none;
+}
+
+.fixed .modal li a {
+  font-size: 1rem;
+}
+
+
+.icon-list2,
+.mode {
+  background-color: var(--bgHeader);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--subtitle);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  transition: 0.2s;
+}
+
+header .icon-list2:hover,
+header .mode:hover {
+  color: var(--title);
+  border: 1px solid rgba(244, 165, 96);
+}
+
+
+.icon-exit {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--subtitle);
+  transition: 0.2s;
+}
+
+.icon-exit:hover {
+  color: crimson;
+}
+
+
+.icon-sun1 {
+  color: orange;
+  border: orange;
+}
+
+
+@media(max-width: 700px) {
+  header .icon {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+@media(min-width: 700px) {
+  header .icon {
+    display: none;
+  }
+}
